@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  emittedValue = 'Button is not clicked yet';
+  onButtonClicked(emittedValueFromChild : string) {
+this.emittedValue = emittedValueFromChild;  }
 }
